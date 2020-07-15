@@ -18,6 +18,9 @@
  * @return {ListNode}
  */
 
+// 方法二：迭代
+// 时间复杂度 O(n+m)
+// 空间复杂度 O(1)
 var mergeTwoLists = function(l1, l2) {
   const prehead = new ListNode(-1)
 
@@ -53,4 +56,6 @@ var mergeTwoLists = function(l1, l2) {
 //   return result
 // };
 // @lc code=end
+
+// 方法一：递归
 
