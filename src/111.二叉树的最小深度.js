@@ -31,5 +31,14 @@ var minDepth = function(root) {
 
   return min_depth + 1;
 };
+
+// var minDepth = function(root) {
+//   if (!root) return 0
+//   if (root.left == null && root.right == null) return 1
+
+//   if (root.left && !root.right) return 1 + minDepth(root.left)
+//   if (!root.left && root.right) return 1 + minDepth(root.right)
+//   return 1 + Math.min(minDepth(root.left), minDepth(root.right))
+// };
 // @lc code=end
 
