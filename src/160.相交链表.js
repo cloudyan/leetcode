@@ -33,6 +33,7 @@ var getIntersectionNode = function(headA, headB) {
 }
 
 
+// 提示超时
 // var getIntersectionNode = function(headA, headB) {
 //   let [p, q] = [headA, headB]
 
