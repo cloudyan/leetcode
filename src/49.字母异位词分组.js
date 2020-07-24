@@ -22,5 +22,9 @@ var groupAnagrams = function(strs) {
   }
   return Object.values(map)
 };
+
+// 或使用 # 分割 26 个字母，让字符串分别对应上述的位置记录次数
+// 或者解释为 26 位长度的字符对应记录字符串每个字母出现的次数
+
 // @lc code=end
 
