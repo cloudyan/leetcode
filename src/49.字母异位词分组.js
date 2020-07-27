@@ -13,7 +13,7 @@ var groupAnagrams = function(strs) {
   const map = {}
   for (let i = 0; i < strs.length; i++) {
     const current = strs[i]
-    const temp = current.split('').sort()
+    const temp = current.split('').sort().join('')
     if (!map[temp]) {
       map[temp] = [current]
     } else {
