@@ -12,7 +12,7 @@
 var titleToNumber = function(s) {
   let result = 0
   for (let i = 0; i < s.length; i++) {
-    const num = s[i].charCodeAt() - 64 // 'A' + 1
+    const num = s[i].charCodeAt() - 'A'.charCodeAt() + 1 // 'A' + 1
     result = result * 26 + num
   }
   return result

@@ -9,6 +9,7 @@
  * @param {string[]} strs
  * @return {string[][]}
  */
+// 性能不如 26 位长度记录频次
 var groupAnagrams = function(strs) {
   const map = {}
   for (let i = 0; i < strs.length; i++) {
