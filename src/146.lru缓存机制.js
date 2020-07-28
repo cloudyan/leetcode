@@ -8,6 +8,8 @@
 /**
  * @param {number} capacity
  */
+// 缓存淘汰算法
+// LRU 的全称是 Least Recently Used，最近使用原则
 var LRUCache = function(capacity) {
   this._cache = {}
   this._len = 0
