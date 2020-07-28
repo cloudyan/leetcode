@@ -74,7 +74,7 @@ LFUCache.prototype.put = function(key, value) {
           }
         }
       }
-      console.log(arr)
+      // console.log(arr)
       const drop = arr.shift()
       delete this._cache[drop.key]
       this._cache[key] = {
