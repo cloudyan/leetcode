@@ -64,3 +64,10 @@ LRUCache.prototype.put = function(key, value) {
  */
 // @lc code=end
 
+// 这里利用对象的排序特性
+// 1. integer-like keys in ascending order
+// 2. normal keys in insertion order
+// 3. Symbols in insertion order
+// 4. if mixed, order: interger-like, normal keys, Symbols
+// http://www.ecma-international.org/ecma-262/6.0/#sec-ordinary-object-internal-methods-and-internal-slots-ownpropertykeys
+// https://juejin.im/post/5c88ce0e5188257f882f0ef8
