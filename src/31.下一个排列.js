@@ -30,6 +30,9 @@ function findIndex(nums) {
   }
   return -1
 }
+// 右键 Run Code 可以运行调试
+// https://github.com/cloudyan/config/blob/master/conf/babel.config.js
+// console.log(findIndex([1,2,3]))
 
 function findMinBigIndex(nums, index) {
   let minBigIndex = index + 1
