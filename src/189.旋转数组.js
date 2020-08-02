@@ -10,6 +10,8 @@
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
  */
+
+// 每次遍历移动一位，遍历 k 次
 var rotate = function(nums, k) {
   let len = nums.length
   for (let i = 0; i < k; i++) {
@@ -20,5 +22,8 @@ var rotate = function(nums, k) {
     nums[0] = temp
   }
 };
+
+// 对 k 用 len 求余 直接移动 k 位，循环移动
+
 // @lc code=end
 
