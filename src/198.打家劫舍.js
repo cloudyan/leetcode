@@ -10,6 +10,11 @@
  * @return {number}
  */
 
+// `动态规划`到底怎么想？其实可以先用 `递归+记忆化` 解决问题，然后再转化成`动态规划`。
+
+// 首先说明的是 `递归+记忆化` 是`从顶向下`的一种解决方式：即我们要解决大问题，大问题拆解成小问题。
+// 而 `动态规划` 是`从底向上`的一种解决方式：即我们先解决小问题，然后逐步推出大问题。
+
 // https://leetcode-cn.com/problems/house-robber/solution/dong-tai-gui-hua-jie-ti-si-bu-zou-xiang-jie-cjavap/
 // 动态规划的的四个解题步骤是：
 
