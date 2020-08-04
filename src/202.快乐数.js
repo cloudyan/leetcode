@@ -28,6 +28,7 @@
 //   return isHappy(res)
 // };
 
+// map 放在外层，有可能运行多个测试用例时，未初始化导致出错
 var isHappy = function(n) {
   const map = {}
 
