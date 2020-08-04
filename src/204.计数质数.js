@@ -10,11 +10,12 @@
  * @return {number}
  */
 
-// 使用整数倍数排除法
+// 使用整数倍数排除法(厄拉多塞筛法)
 var countPrimes = function(n) {
   let count = 0;
   let signs = new Uint8Array(n);
 
+  // const max = Math.ceil(Math.sqrt(n))
   for (let i = 2; i < n; i++) {
     if (!signs[i - 1]) {
       count++;
