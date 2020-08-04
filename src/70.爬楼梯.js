@@ -10,7 +10,7 @@
  * @return {number}
  */
 
-// f(x)=f(x−1)+f(x−2) 兔子数列
+// f(x)=f(x−1)+f(x−2)
 // 动态规划
 var climbStairs = function(n) {
   let p = 0
