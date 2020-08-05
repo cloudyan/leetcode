@@ -30,17 +30,15 @@
 
 // map 放在外层，有可能运行多个测试用例时，未初始化导致出错
 var isHappy = function(n) {
-  const map = {}
-
-  function calcNum(n) {
-    const res = n.toString().split('').reduce((total, i) => total + i*i, 0)
-    if (map[res]) return false
-    if (res == 1) return true
-    map[res] = true
-    return calcNum(res)
-  }
-
   return calcNum(n)
 };
+
+function calcNum(n, cache = {}) {
+  const res = n.toString().split('').reduce((total, i) => total + i*i, 0)
+  if (cache[res]) return false
+  if (res == 1) return true
+  cache[res] = true
+  return calcNum(res, cache)
+}
 // @lc code=end
 
