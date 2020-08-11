@@ -70,4 +70,3 @@ MyStack.prototype.empty = function() {
 // s.empty()
 // console.log(s)
 // @lc code=end
-
