@@ -32,7 +32,8 @@ var solution = function(isBadVersion) {
         let high = n;
         let firstBadVer = n
         while (low <= high) {
-            let mid = Math.ceil((high+low)/2)
+            // let mid = Math.ceil((high+low)/2)
+            let mid = (high+low) >>> 1
             if (isBadVersion(mid)) {
                 firstBadVer = mid
                 high = mid - 1
