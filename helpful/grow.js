@@ -1,4 +1,5 @@
 
+// 到店咨询数量 签单率
 var grow = function(month, prev = 18) {
   let res = prev
   const months = [prev];
