@@ -34,7 +34,7 @@ var distributeCandies = function(candies) {
   const max = candies.length/2
   const len = types.size
   // console.log(len, max)
-  return len < max ? len : max;
+  return Math.min(len, max);
 };
 
 // @lc code=end
