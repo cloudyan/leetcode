@@ -11,6 +11,7 @@
  */
 // 双指针
 var moveZeroes = function(nums) {
+  // 不要开辟新空间
   let times = [];
 
   for (let i = 0; i < nums.length; i++) {
